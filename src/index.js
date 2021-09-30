@@ -1,11 +1,12 @@
 import express from 'express';
 import { config } from "dotenv"
 import cors from 'cors';
+config()
 
 import Route from './routes/index'
 import connect from './configs/db'
 
-config()
+
 const app = express();
 
 // MIDDLE WARES

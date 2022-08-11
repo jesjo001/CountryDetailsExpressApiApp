@@ -20,5 +20,4 @@ export const rateLimiterMiddleware = (req, res, next) => {
   .catch((rejRes) => {
     res.status(429).send(`You are currently limited to 30`);
   });
-
 };
